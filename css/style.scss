@@ -1,5 +1,80 @@
-//General//
-::-webkit-scrollbar
-h1 {
-    font-size: 5rem;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+// This sets the reusable properties.
+:root {
+    --primary-color: #75FBBB;
+    --secondary-color: #003366;
+    --tertiary-color: #ED1C24;
+    --some-other-color: #EFEA00;
+}
+
+body {
+    font-family: Poppins;
+    a {
+        text-decoration: none;
+        color: white;
+        // &:hover {
+        //     background: white;
+        //     color: blue;
+        // }
+    }
+    margin: 0;
+    background-color: #f3f3f3;
+    li {
+        list-style-type: none;
+    }
+}
+
+header {
+    background: var(--secondary-color);
+    nav {
+        display: none;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0em 1em;
+        align-items: center;
+        box-shadow: 3px 2px 3px grey;
+    }
+    .logo {
+        width: 30%;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    header {
+        .open-nav, .mobile-exit {
+            display: none;
+        }
+        
+
+        nav {
+            display: block;
+            ul {
+                display: flex;
+            }
+            li {
+                align-items: center;
+                padding: 1em 2em;
+            }
+
+            .nav-contact {
+                border: 2px solid white;
+                border-radius: 5em;
+                padding: 0.5em 1.5em;
+                &:hover {
+                    background: white;
+                    color: var(--secondary-color);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    
 }
