@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 :root {
+  --newprimary: #3E5B6E;
+  --newsecondary: #00CF7E;
+  --newtertiary: #9DB4C5;
+  --accents: #EF4740;
+  --buttons: #EF4740 - #FD3E38;
   --primary-color: #75FBBB;
   --secondary-color: #003366;
   --tertiary-color: #ED1C24;
@@ -10,6 +15,9 @@ body {
   font-family: Poppins;
   margin: 0;
   background-color: #f3f3f3;
+}
+body .background-illustration {
+  background: url(/assets/Background_Rectangles.png), url(/assets/tools-background-illust.png);
 }
 body a {
   text-decoration: none;
@@ -40,6 +48,52 @@ header .mobile-menu {
   cursor: pointer;
 }
 
+.hero {
+  text-align: center;
+}
+
+main .container span {
+  display: none;
+}
+main .container h1 {
+  color: var(--newprimary);
+  font-weight: bold;
+  font-size: 2.3rem;
+  line-height: 1.3em;
+  margin-top: 1em;
+}
+main .container h3 {
+  font-weight: normal;
+  font-size: 1.3rem;
+  color: var(--newsecondary);
+  margin-top: -1em;
+}
+main .container .primary-cta {
+  background-color: var(--accents);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 0.7em;
+}
+main .container .reader {
+  width: 7%;
+}
+main .container .read-more {
+  display: block;
+  margin-top: 1em;
+  color: var(--newprimary);
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+main .container .laptop {
+  margin-top: 3em;
+}
+main .container p {
+  color: var(--newsecondary);
+}
+
 @media screen and (min-width: 768px) {
   header .mobile-menu, header .mobile-menu-exit {
     display: none;
@@ -66,5 +120,13 @@ header .mobile-menu {
     background: white;
     color: var(--secondary-color);
     font-weight: bold;
+  }
+
+  .container .contents {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .contents span, .container .contents p {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

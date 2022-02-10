@@ -2,6 +2,11 @@
 
 // This sets the reusable properties.
 :root {
+    --newprimary: #3E5B6E;
+    --newsecondary: #00CF7E;
+    --newtertiary: #9DB4C5;
+    --accents: #EF4740;
+    --buttons: #EF4740 - #FD3E38;
     --primary-color: #75FBBB;
     --secondary-color: #003366;
     --tertiary-color: #ED1C24;
@@ -9,6 +14,10 @@
 }
 
 body {
+
+    .background-illustration {
+        background: url(/assets/Background_Rectangles.png), url(/assets/tools-background-illust.png);
+    }
     font-family: Poppins;
     a {
         text-decoration: none;
@@ -42,6 +51,68 @@ header {
     }
 }
 
+.hero {
+    text-align: center;
+}
+main .container {
+
+    //Experimental
+    // p {
+    //     display: none;
+    // }
+
+    span {
+        display: none;
+    }
+    //Experimental ends
+
+       
+    h1 {
+         color: var(--newprimary);
+         font-weight: bold;
+         font-size: 2.3rem;
+         line-height: 1.3em;
+         margin-top: 1em;
+    }
+
+    h3 {
+        font-weight: normal;
+        font-size: 1.3rem;
+        color: var(--newsecondary);
+        margin-top: -1em;
+    }
+
+
+    .primary-cta {
+        background-color: var(--accents);
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 1rem 3rem;
+        border-radius: 0.7em;
+
+    }
+
+    .reader {
+        width: 7%;
+    }
+
+    .read-more {
+        display: block;
+        margin-top: 1em;
+        color: var(--newprimary);
+        font-size: 0.8em;
+        text-decoration: underline;
+    }
+
+    .laptop {
+        margin-top: 3em;
+    }
+    p {
+        color: var(--newsecondary);
+    }
+}
 
 
 
@@ -82,5 +153,15 @@ header {
             }
         }
     }
+
+    .container .contents {
+        span, p {
+            display: none;
+        }
+        display: flex;
+        justify-content: space-between;
+    }
+
+
     
 }
