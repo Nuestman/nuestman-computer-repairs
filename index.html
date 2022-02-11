@@ -1,81 +1,370 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Nuestman Computer Repairs</title>
-  <meta name="description" content="For all your computer emergencies, Numan Usman gives you the best treatment!">
-  <meta name="author" content="Numan Usman">
+    <title>Nuestman Computer Repairs</title>
+    <meta name="description" content="For all your computer emergencies, Numan Usman gives you the best treatment!">
+    <meta name="author" content="Numan Usman">
 
-  <meta property="og:title" content="Computer Repairs Site">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://nuestman.github.io/nuestman-computer-repairs/">
-  <meta property="og:description" content="For all your computer emergencies, Numan Usman gives you the best treatment!">
-  <meta property="og:image" content="image.png">
+    <meta property="og:title" content="Computer Repairs Site">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nuestman.github.io/nuestman-computer-repairs/">
+    <meta property="og:description"
+        content="For all your computer emergencies, Numan Usman gives you the best treatment!">
+    <meta property="og:image" content="image.png">
 
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="nuest-grinder-icon.png" type="image/png">
-  <link rel="apple-touch-icon" href="Nuest-Grinder-Logo.svg">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="nuest-grinder-icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="Nuest-Grinder-Logo.svg">
 
-  <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <!-- your content here... -->
-  <div class="background-illustration">
-  <header>
-      <section class="nav-bar">
-          <a href="#" class="logo"><img src="assets/images/nuest-grinder-logo.svg" alt="Nuestman Logo"></a>
 
-          <img class="mobile-menu" id="mobile-open" src="assets/images/mobile-menu.svg" alt="Mobile menu icon">
+    <!-- your content here... -->
+    <div class="background-illustration">
+        <header>
+            <section class="nav-bar">
+                <a href="#" class="logo"><img src="assets/images/nuest-grinder-logo.svg" alt="Nuestman Logo"></a>
 
-          <!--Nav elements to be hidden on mobile-->
-          <nav>
-              <div class="mobile-menu-exit" id="mobile-exit"><img src="assets/images/mobile-menu-exit.svg" alt="Mobile Exit icon"></div>
+                <img class="mobile-menu" id="mobile-open" src="assets/images/mobile-menu.svg" alt="Mobile menu icon">
 
-            
-              <ul class="primary-nav">
-                <li><a href="#" class="services" >Services</a></li>
-                <li><a href="#" class="about">About Us</a></li>
-                <li><a href="#" class="nav-contact">Contact Us</a></li>
-
-             </ul>
-            
-            </nav>
-      </section>
-  </header>
-
-  <main class="hero">
-    <div class="container">
-              
-        <div class="left-col">
-          <h1>What's Your Computer Emergency? </h1><span><img src="assets/mobileHero-query-mark.png" alt="Big question mark"></span>
-          
-          <h3>We've got you covered!</h3>
-
-          <div class="hero-cta">
-            <button class="primary-cta" href="#contact-section"> Call Now!</button>
-          
-          <a href="#services-section" class="read-more"> <img class="reader" src="assets/mobile-Reader-icon-mobile.png" alt="Person reading a book">Find out what we do</a>
-          </div>
-
-        </div>
+                <!--Nav elements to be hidden on mobile-->
+                <nav>
+                    <div class="mobile-menu-exit" id="mobile-exit"><img src="assets/images/mobile-menu-exit.svg"
+                            alt="Mobile Exit icon"></div>
 
 
-        <img class="laptop" src="assets/mobileNuestman_on_laptop.png" alt="Healthy PC with a normal EKG reading">
-        <p class="hide-tag-desktop">In today's tech-driven world, A healthy PC is a necessity.</p>
+                    <ul class="primary-nav">
+                        <li><a href="#services" class="services">Services</a></li>
+                        <li><a href="#about" class="about">About Us</a></li>
+                        <li><a href="#contact" class="nav-contact">Contact Us</a></li>
 
-        
+                    </ul>
+
+                </nav>
+            </section>
+        </header>
+
+        <main>
+
+            <section class="hero">
+
+                <div class="container">
+<!--Come back to Change images from mobile to desktop version.-->
+                    <div class="left-col">
+                        <h1>What's Your Computer Emergency? </h1><span><img src="assets/mobileHero-query-mark.png"
+                                alt="Big question mark"></span>
+
+                        <h3>We've got you covered!</h3>
+
+                        <div class="hero-cta">
+                            <button class="primary-cta" href="#contact"> Call Now!</button>
+
+                            <a href="#services" class="read-more"> <img class="reader"
+                                    src="assets/mobile-Reader-icon-mobile.png" alt="Person reading a book">Find out what
+                                we do</a>
+                        </div>
+
+                    </div>
+
+
+                    <img class="laptop" src="assets/mobileNuestman_on_laptop.png"
+                        alt="Healthy PC with a normal EKG reading">
+                    <p class="hide-tag-desktop">In today's tech-driven world, A healthy PC is a necessity.</p>
+
+                </div>
+            </section>
+
+            <section class="services">
+                <!--Header-container for background for contents
+                Separated into 2 ul for easy placement-->
+
+                <div class="header-container">
+                    <h2 class="section-header">Computer Repair</h2>
+                    <h2 class="section-header-2">Services</h2>
+                    <p class="subtitle">What we do...</p>
+                </div>
+                
+                <!--To use columns to split content into 3 columns on desktop version, else stack all on mobile.-->
+                <ul>
+                    <li>Windows, Mac, ChromeOS, Linux</li>
+                    <li>Operating Systems Installation</li>
+                    <li>Office and other Softwares Installations and Updates</li>
+                    <li>Driver Updates and Installations</li>
+                    <li>Check up, Tune-up, & Cleanup</li>
+                    <li>File Backup & Restore, and Recovery</li>
+                    <li>Virus / Malware Removal</li>
+                    <li>Android / iPhone Software Issues</li>
+                    <li>Parts / Accessories Replacement</li>
+                    <li>All Other Software Issues</li>
+                    <li>Affordable. Satisfaction Guaranteed</li>
+                    <li>and much more....</li>
+                </ul>
+
+                <button class="primary-cta" href="#contact"> Call Now!</button>
+
+            </section>
+
+
+            <section class="faq-section">
+                <!--Header-container for background for contents
+                Separated into 2 ul for easy placement.-->
+                <!--Possibly use columns. Come back to this.-->
+                <div class="header-container">
+                    <h2 class="section-header">Frequently</h2>
+                    <h2 class="section-header-2"><img src="assets/mobile-Icon-awesome-question-circle.png" alt=""> Asked</h2>
+                    <p class="subtitle">Find quick responses here...</p>
+                </div>
+                
+<!--Come to this! To remove all image icons and use CSS list style to apply them.-->
+                <div class="faq-ask">
+                    <ul class="left-faq">
+                        <li>
+                            <details class="faq-ans"> 
+                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> Where can I find you?</summary> 
+                                Located @ Moinsi Valley - MVSS 27. I don't have a shop as yet. I'm freelancing from home now.</details>
+                            
+                        </li>
+                        <li>
+                            <details class="faq-ans"> 
+                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> Do you only work at home?</summary> 
+                                No. I provided my services wherever it's needed at your convenience. Home service, at work or shop. Everywhere. Terms and conditions apply.</details>
+                            
+                        </li>
+                        <li>
+                            <details class="faq-ans"> 
+                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> What are your opening and closing times?</summary> 
+                                I'm freelancing for now, so I'm available anytime. Just give me a call and let's set up a meet.</details>
+                            
+                        </li>
+                        <li>
+                            <details class="faq-ans"> 
+                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> Do you repair phones as well?</summary> 
+                                Yes. But I only fix phone software-related problems. I don't fix broken screens and the likes as of now.</details>
+                            
+                        </li>
+                    </ul>
+
+                    <ul class="right-faq">
+                        <li>
+                            <details class="faq-ans"> 
+                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> Can I get a refund?</summary> 
+                                Yes. If you're not satisfied with the service provided. Terms and conditions apply.</details>
+                            
+                        </li>
+                        <li>
+                            <details class="faq-ans"> 
+                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> Do you teach IT stuff as well?</summary> 
+                                Not yet. Plans are underway to start that service for people interested.</details>
+                            
+                        </li>
+                        <li>
+                            <details class="faq-ans"> 
+                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> Do you have any official qualifications to back your claims?</summary> 
+                                No. I'm self-taught, and freelancing for now. I'm currently taking some formal classes in a bid to get certified.</details>
+                            
+                        </li>
+                        <li>
+                            <details class="faq-ans"> 
+                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> Do How do I contact you if my question isn't answered here?</summary> 
+                                Please <a href="#contact" class="call"><em>call me,</em></a> <a href="api.whatsapp.com/+233206484034" class="whatsapp"><em>WhatsApp</em></a>, <a href="#contact" class="sms"><em>SMS</em></a>, or <a href="mailto:nuestman.icloud.com" class="email">email</a>  me at anytime to get all your concerns addressed</details>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="about">
+                <!--Header-container for background for contents-->
+                <div class="header-container">
+                    <h2 class="section-header">About</h2>
+                    <h2 class="section-header-2"><img src="assets/mobile-Icon-awesome-question-circle.png" alt=""> 'Us'</h2>
+                    <p class="subtitle">Who are behind this?</p>
+                </div>
+
+                <!--For placing body content side by side-->
+                <!--Might need to change to 'Container' to match hero section container to reduce code.-->
+                <div class="body-container">
+
+                    <div class="technician-card-left">
+                        <img src="assets/images/Numan-Passport.png" alt="Numan Usman-Website Owner">
+                        <p class="technician-name">
+                            Numan Usman
+                        </p>
+                        <p class="titles">
+                            Emergency Nurse <br>
+                            "Emergency Computer Physician" <br>
+                            Graphic Designer <br>
+                            UI/UX, Frontend Dev (In the making)
+                        </p>
+
+                    </div>
+
+                    <div class="technician-bio-right">
+                        <p>
+                            I'm hardly "the man", tho, but I'm the man behind this.
+                            A nurse by profession and a tech enthusiast by heart. 
+                            So I treat humans & computers. That's pretty cool, if you ask me, but don't. Kidding :)
+                            I am a self-taught "computer whatever you wanna call it"
+                            I’ve always loved playing around with PCs since I got introduced to it as teenager in High School, then SSS.
+                            Been doing Freelance computer repairs over a decade now.
+                            Got Excellent Customer Service. I'm Trustworthy, Experienced. 
+                            My best qualities of all, I've got a big forehead and a small body, and I wear cool glasses.
+                        </p>
+                    </div>
+
+                </div>
+                
+
+            </section>
+
+
+            <section class="testimonials">
+                <!--Header-container for background for contents-->
+                <div class="header-container">
+                    <h2 class="section-header">Testimonials</h2>
+                    <h2 class="section-header-2"><img src="assets/mobileTestimo-Icon-ionic-ios-chatboxes.png" alt=""> About 'Us'</h2>
+                    <p class="subtitle">What customers say...</p>
+                </div>
+
+                <!--For placing body content side by side-->
+                <!--Might need to change to 'Container' to match hero section container to reduce code.--> 
+                
+                <div class="card-container">
+                    <div class="card-content">
+                        <div class="card">
+                            <!--Get placeholder pics of actual human faces -->
+                            <img src="nuest-grinder-icon.png" alt="Person giving the testimony.">
+
+                            <blockquote class="testimony">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consequuntur consequatur, ratione laborum earum quam dicta sint ab ad eos corrupti et, expedita reprehenderit quaerat laudantium culpa a quasi!</blockquote> <cite>John Doe</cite>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card">
+                            <!--Get placeholder pics of actual human faces -->
+                            <img src="nuest-grinder-icon.png" alt="Person giving the testimony.">
+
+                            <blockquote class="testimony">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consequuntur consequatur, ratione laborum earum quam dicta sint ab ad eos corrupti et, expedita reprehenderit quaerat laudantium culpa a quasi!</blockquote> <cite>John Doe</cite>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card">
+                            <!--Get placeholder pics of actual human faces -->
+                            <img src="nuest-grinder-icon.png" alt="Person giving the testimony.">
+
+                            <blockquote class="testimony">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consequuntur consequatur, ratione laborum earum quam dicta sint ab ad eos corrupti et, expedita reprehenderit quaerat laudantium culpa a quasi!</blockquote> <cite>John Doe</cite>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card">
+                            <!--Get placeholder pics of actual human faces -->
+                            <img src="nuest-grinder-icon.png" alt="Person giving the testimony.">
+
+                            <blockquote class="testimony">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consequuntur consequatur, ratione laborum earum quam dicta sint ab ad eos corrupti et, expedita reprehenderit quaerat laudantium culpa a quasi!</blockquote> <cite>John Doe</cite>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card">
+                            <!--Get placeholder pics of actual human faces -->
+                            <img src="nuest-grinder-icon.png" alt="Person giving the testimony.">
+
+                            <blockquote class="testimony">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consequuntur consequatur, ratione laborum earum quam dicta sint ab ad eos corrupti et, expedita reprehenderit quaerat laudantium culpa a quasi!</blockquote> <cite>John Doe</cite>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card">
+                            <!--Get placeholder pics of actual human faces -->
+                            <img src="nuest-grinder-icon.png" alt="Person giving the testimony.">
+
+                            <blockquote class="testimony">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consequuntur consequatur, ratione laborum earum quam dicta sint ab ad eos corrupti et, expedita reprehenderit quaerat laudantium culpa a quasi!</blockquote> <cite>John Doe</cite>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card">
+                            <!--Get placeholder pics of actual human faces -->
+                            <img src="nuest-grinder-icon.png" alt="Person giving the testimony.">
+
+                            <blockquote class="testimony">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consequuntur consequatur, ratione laborum earum quam dicta sint ab ad eos corrupti et, expedita reprehenderit quaerat laudantium culpa a quasi!</blockquote> <cite>John Doe</cite>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="contact">
+                <!--Header-container for background for contents-->
+                <div class="header-container">
+                    <h2 class="section-header">Contact</h2>
+                    <h2 class="section-header-2"><img src="assets/mobile-Icon-awesome-question-circle.png" alt=""> 'Us'</h2>
+                    <p class="subtitle">How can we help you?</p>
+                </div>
+
+                <!--For placing body content side by side-->
+                <!--Might need to change to 'Container' to match hero section container to reduce code.-->
+                <div class="body-container">
+
+                    <div class="contact-card-left">
+                        <form action="submit">
+                            <label for="name" >Name</label>
+                            <input type="text" placeholder="Full Name (Required)" >
+
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Optional">
+
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" name="number" id="number" placeholder="Phone number (Required)">
+
+                            <label for="device">Device (Add model if possible)</label>
+                            <input list="devices" name="device" id="device" placeholder="Choose your device">
+                            <datalist id="devices">
+                                <option value="Dell"></option>
+                                <option value="HP"></option>
+                                <option value="Lenovo"></option>
+                                <option value="Apple Mac"></option>
+                                <option value="Toshiba"></option>
+                                <option value="Microsoft"></option>
+                                <option value="Acer"></option>
+                                <option value="Sony"></option>
+                                <option value="Samsung"></option>
+                                <option value="Asus"></option>
+                            </datalist>
+                            
+                            
+                        </form>
+
+                    </div>
+
+                    <div class="contact-section-illustration">
+                        <img src="assets/mobileContact-section-illustration.png" alt="Person sending info from a tablet, and another receiving on a laptop.">
+                    </div>
+
+                </div>
+                
+
+            </section>
+
+        </main>
+
+
 
     </div>
-  </main>
+    <script src="js/scripts.js"></script>
 
-
-
-  </div>
-  <script src="js/scripts.js"></script>
 </body>
+
 </html>

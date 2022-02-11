@@ -28,7 +28,7 @@ body li {
 }
 
 header {
-  background: var(--secondary-color);
+  background: var(--newprimary);
 }
 header nav {
   display: none;
