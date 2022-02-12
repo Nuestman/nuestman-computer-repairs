@@ -54,6 +54,18 @@ header {
 .hero {
     text-align: center;
 }
+
+.primary-cta {
+        background-color: var(--accents);
+        border: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 1em 3em;
+        border-radius: 0.7em;
+
+    }
+
 main .container {
 
     //Experimental
@@ -83,17 +95,6 @@ main .container {
     }
 
 
-    .primary-cta {
-        background-color: var(--accents);
-        border: none;
-        color: white;
-        font-weight: bold;
-        font-size: 1rem;
-        padding: 1rem 3rem;
-        border-radius: 0.7em;
-
-    }
-
     .reader {
         width: 7%;
     }
@@ -109,11 +110,87 @@ main .container {
     .laptop {
         margin-top: 3em;
     }
+
     p {
         color: var(--newsecondary);
     }
 }
 
+
+
+.header-container {
+    background: var(--newprimary);
+    background-image: url(/Nuestman_Computer_Repairs/assets/mobileHeader-back-illust.png);
+    text-align: center;
+}
+
+.section-header {
+    padding-top: 0.5em;
+    color: #00CF7E;
+    font-size: 2.5rem;
+}
+
+.section-header-2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-top: -1.2em;
+    margin-left: 0.7em;
+    padding-bottom: 0.5em;
+}
+
+main {
+    .services {
+        background: var(--newtertiary);
+        
+    }
+
+    .services .primary-cta {
+        font-weight: lighter;
+        padding: 0.5em 1em;
+        border-radius: 0.2em;
+        margin: 0 5em 0 5em;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: var(--newprimary);
+        font-weight: bold;
+        background: white;
+        margin: 0 3.5em;
+        padding: 0.1em 0;
+        border-radius: 0.5em;
+        // width: 100%vw;
+        
+    }
+
+    ul.service-list {
+    //same as ".services ul"
+        background: white;
+        color: var(--newprimary);
+        line-height: 2em;
+        padding: 1.5em 0.1em 1em 2.8em;
+        border-radius: 0.5em;
+        margin: 2em 3em;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+
+
+        li {
+            line-height: 2.5em;
+            &:before {                
+                content: '';
+                left: 1em;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                background-image: url(../assets/mobileServices-Icon-awesome-check-circle.png);
+                background-size: contain;
+                margin-top: 0.6em;
+            }
+        }
+    }    
+}
 
 
 
