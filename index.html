@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Nuestman Computer Repairs</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestman Repairs Redo</title>
     <meta name="description" content="For all your computer emergencies, Numan Usman gives you the best treatment!">
     <meta name="author" content="Numan Usman">
 
@@ -15,328 +14,406 @@
     <meta property="og:description"
         content="For all your computer emergencies, Numan Usman gives you the best treatment!">
     <meta property="og:image" content="image.png">
-
-    <link rel="icon" href="/favicon.ico">
-    <link rel="icon" href="nuest-grinder-icon.png" type="image/png">
-    <link rel="apple-touch-icon" href="Nuest-Grinder-Logo.svg">
-
+    <link rel="shortcut icon" href="Turquoise.png" type="image/x-icon">
+    
+    <script src="https://kit.fontawesome.com/864a056e03.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- your content here... -->
-    <div class="background-illustration">
-        <header>
-            <section class="nav-bar">
-                <a href="#" class="logo"><img src="assets/images/nuest-grinder-logo.svg" alt="Nuestman Logo"></a>
+    
+    <header id="back-to-top">
+        <div class="container">
+            
+            <a href="#" class="logo" id="logo"><img src="assets/images/nuest-grinder-logo.svg" alt="Nuestman Logo"></a>
+            
 
-                <img class="mobile-menu" id="mobile-open" src="assets/images/mobile-menu.svg" alt="Mobile menu icon">
+            <img class="mobile-menu" id="mobile-cta" src="assets/images/mobile-menu.svg" alt="Open Navigation">
 
-                <!--Nav elements to be hidden on mobile-->
-                <nav>
-                    <div class="mobile-menu-exit" id="mobile-exit"><img src="assets/images/mobile-menu-exit.svg"
-                            alt="Mobile Exit icon"></div>
+            <nav>
+                <div class="nav-background">
 
-
+                    <img class="mobile-menu-exit" id="mobile-exit" src="assets/images/mobile-menu-exit.svg" alt="Close Navigation">
+                
+                    
                     <ul class="primary-nav">
-                        <li><a href="#services" class="services">Services</a></li>
-                        <li><a href="#about" class="about">About Us</a></li>
-                        <li><a href="#contact" class="nav-contact">Contact Us</a></li>
+                        <i class="fa-solid fa-screwdriver-wrench fa-3x"></i><li class="services"><a href="#services-section">Services</a></li>
 
+                        <li class="faq"><i class="fa-solid fa-circle-question fa-3x"></i><a href="#faq-section">FAQ</a></li>
+
+                        <li class="coming-soon"><i class="fa-solid fa-fire fa-3x"></i><a href="#coming-soon-section">Coming Soon!</a></li>
                     </ul>
+    
+                    <ul class="secondary-nav">
 
-                </nav>
-            </section>
-        </header>
-
-        <main>
-
-            <section class="hero">
-
-                <div class="container">
-<!--Come back to Change images from mobile to desktop version.-->
-                    <div class="left-col">
-                        <h1>What's Your Computer Emergency? </h1><span><img src="assets/mobileHero-query-mark.png"
-                                alt="Big question mark"></span>
-
-                        <h3>We've got you covered!</h3>
-
-                        <div class="hero-cta">
-                            <button class="primary-cta" href="#contact"> Call Now!</button>
-
-                            <a href="#services" class="read-more"> <img class="reader"
-                                    src="assets/mobile-Reader-icon-mobile.png" alt="Person reading a book">Find out what
-                                we do</a>
-                        </div>
-
-                    </div>
-
-
-                    <img class="laptop" src="assets/mobileNuestman_on_laptop.png"
-                        alt="Healthy PC with a normal EKG reading">
-                    <p class="hide-tag-desktop">In today's tech-driven world, A healthy PC is a necessity.</p>
-
-                </div>
-            </section>
-
-            <section class="services">
-                <!--Header-container for background for contents
-                Separated into 2 ul for easy placement-->
-
-                <div class="header-container">
-                    <h2 class="section-header">Computer Repair</h2>
-                    <h2 class="section-header-2">Services</h2>
-                </div>
-                    <div class="subtitle">
-                        <p>What we do...</p>
-                    </div>
-                
-                
-                <!--To use columns to split content into 3 columns on desktop version, else stack all on mobile.-->
-                <ul class="service-list">
-                    <li>Windows, Mac, ChromeOS, Linux</li>
-                    <li>Operating Systems Installation</li>
-                    <li>Office and other Softwares Installations and Updates</li>
-                    <li>Driver Updates and Installations</li>
-                    <li>Check up, Tune-up, & Cleanup</li>
-                    <li>File Backup & Restore, and Recovery</li>
-                    <li>Virus / Malware Removal</li>
-                    <li>Android / iPhone Software Issues</li>
-                    <li>Parts / Accessories Replacement</li>
-                    <li>All Other Software Issues</li>
-                    <li>Affordable. Satisfaction Guaranteed</li>
-                    <li>and much more....</li>
-                </ul>
-
-                <button class="primary-cta" href="#contact"> Call Now!</button>
-
-            </section>
-
-
-            <section class="faq-section">
-                <!--Header-container for background for contents
-                Separated into 2 ul for easy placement.-->
-                <!--Possibly use columns. Come back to this.-->
-                <div class="header-container">
-                    <h2 class="section-header">Frequently</h2>
-                    <h2 class="section-header-2"><img src="assets/mobile-Icon-awesome-question-circle.png" alt=""> Asked</h2>
+                        <li class="about"><i class="fa-solid fa-id-card fa-3x"></i><a href="#about-section">About</a></li>
+                        
+                        <li class="nav-contact-cta"><i class="fa-solid fa-mobile-button fa-3x"></i><a href="#contact-section">Contact 'Us'</a></li>
+                    </ul>
                     
                 </div>
-                <div class="subtitle">
-                    <p class="subtitle">Find quick responses here...</p>
-                </div>
+    
+                    
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero-section">
+            <div class="container">
                 
-<!--Come to this! To remove all image icons and use CSS list style to apply them.-->
+                <div class="left-hero">
+                    <h1>
+                        What's Your Computer Emergency?
+                    </h1>
+    
+                    <h3>We've got you covered</h3>
+    
+                    <div class="hero-cta">
+                        <button class="primary-cta" type="submit">Call Now!</button>
+    
+                        <a href="services-section" class="secondary-cta">
+                        <img src="assets/mobile-Reader-icon-mobile.png" alt="Little Reader icon">Read more...</a>
+                    </div>
+                </div>
+
+                <div class="right-hero">
+                    <figure><img src="assets/Laptop-illust.svg" alt="Nuestman Tech Labs showing on a Laptop screen"><caption>In today's Tech-driven world, having a healthy PC is a necessity.</caption></figure>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="services-section">
+           
+            <div class="background">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2 class="section-title">
+                            Computer Repair 
+                        </h2>
+                        
+                        <h2 class="section-title2"><i class="fa-solid fa-screwdriver-wrench"></i>
+                            Services
+                        </h2>
+                    </div>
+
+                    <p class="subtitle">
+                        Our Services include...
+                    </p>
+
+                    <div class="service-list">
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                Windows, Mac, ChromeOS, Linux</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                Operating Systems Installation</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                Office and other Softwares Installations & Updates</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                Driver Updates and Installations</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                Check up, Tune-up, & Cleanup</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                File Backup & Restore, and Recovery</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                Virus / Malware Removal</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                Android / iPhone Software Issues</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                Parts / Accessories Replacement</li>
+                            <li ><span class="fa-li"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                All Other Software Issues</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                Affordable. Satisfaction Guaranteed</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                and much more....</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            
+        </section>
+
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-title">
+                        Frequently
+                    </h2>
+                    <h2 class="section-title2"><i class="fa-solid fa-circle-question"></i>
+                        Asked
+                    </h2>
+                </div>
+
+                <p class="subtitle">
+                    Click a question below for quick answers...
+                </p>
+
                 <div class="faq-ask">
-                    <ul class="left-faq">
-                        <li>
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span>
                             <details class="faq-ans"> 
-                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> Where can I find you?</summary> 
-                                Located @ Moinsi Valley - MVSS 27. I don't have a shop as yet. I'm freelancing from home now.</details>
+                                <summary class="faq-que"><strong> Where can I find you?</strong></summary> 
+                                <em>Located @ Moinsi Valley - MVSS 27. I don't have a shop as yet. I'm freelancing from home now.</em>
+                            </details>
                             
                         </li>
-                        <li>
+                        <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span>
                             <details class="faq-ans"> 
-                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> Do you only work at home?</summary> 
-                                No. I provided my services wherever it's needed at your convenience. Home service, at work or shop. Everywhere. Terms and conditions apply.</details>
+                                <summary class="faq-que"><strong>Do you only work at home?</strong></summary> 
+                                <em>No. I provided my services wherever it's needed at your convenience. Home service, at work or shop. Everywhere. Terms and conditions apply.</em>
+                            </details>
                             
                         </li>
-                        <li>
+                        <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span>
                             <details class="faq-ans"> 
-                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> What are your opening and closing times?</summary> 
-                                I'm freelancing for now, so I'm available anytime. Just give me a call and let's set up a meet.</details>
+                                <summary class="faq-que"><strong>What are your opening and closing times?</strong></summary> 
+                                <em>I'm freelancing for now, so I'm available anytime. Just give me a call and let's set up a meet.</em>
+                            </details>
                             
                         </li>
-                        <li>
+                        <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span>
                             <details class="faq-ans"> 
-                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> Do you repair phones as well?</summary> 
-                                Yes. But I only fix phone software-related problems. I don't fix broken screens and the likes as of now.</details>
+                                <summary class="faq-que"><strong>Do you repair phones as well?</strong></summary> 
+                                <em>Yes. But I only fix phone software-related problems. I don't fix broken screens and the likes as of now.</em>
+                            </details>
                             
                         </li>
                     </ul>
 
-                    <ul class="right-faq">
-                        <li>
+                    <ul class="fa-ul">
+                        <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span>
                             <details class="faq-ans"> 
-                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> Can I get a refund?</summary> 
-                                Yes. If you're not satisfied with the service provided. Terms and conditions apply.</details>
+                                <summary class="faq-que"><strong>Can I get a refund?</strong></summary> 
+                                <em>Yes. If you're not satisfied with the service provided. Terms and conditions apply.</em>
+                            </details>
                             
                         </li>
-                        <li>
+                        <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span>
                             <details class="faq-ans"> 
-                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> Do you teach IT stuff as well?</summary> 
-                                Not yet. Plans are underway to start that service for people interested.</details>
+                                <summary class="faq-que"><strong>Do you teach IT stuff as well?</strong></summary> 
+                                <em>Not yet. Plans are underway to start that service for people interested.</em>
+                            </details>
                             
                         </li>
-                        <li>
+                        <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span>
                             <details class="faq-ans"> 
-                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> Do you have any official qualifications to back your claims?</summary> 
-                                No. I'm self-taught, and freelancing for now. I'm currently taking some formal classes in a bid to get certified.</details>
+                                <summary class="faq-que"><strong>Do you have any official qualifications to back your claims?</strong></summary> 
+                                <em>No. I'm self-taught, and freelancing for now. I'm currently taking some formal classes in a bid to get certified.</em></details>
                             
                         </li>
-                        <li>
+                        <li><span class="fa-li"><i class="fa-solid fa-circle-question"></i></span>
                             <details class="faq-ans"> 
-                                <summary class="faq-que"><img src="assets/mobileFAQ-Icon-material-question-answer.png" alt=""> Do How do I contact you if my question isn't answered here?</summary> 
+                                <summary class="faq-que"><strong>How do I contact you if my question isn't answered here?</strong></summary> 
                                 Please <a href="#contact" class="call"><em>call me,</em></a> <a href="api.whatsapp.com/+233206484034" class="whatsapp"><em>WhatsApp</em></a>, <a href="#contact" class="sms"><em>SMS</em></a>, or <a href="mailto:nuestman.icloud.com" class="email">email</a>  me at anytime to get all your concerns addressed</details>
                             
                         </li>
                     </ul>
                 </div>
-            </section>
+            </div>
+        </section>
 
 
-            <section class="about">
-                <!--Header-container for background for contents-->
-                <div class="header-container">
-                    <h2 class="section-header">About</h2>
-                    <h2 class="section-header-2"><img src="assets/mobile-Icon-awesome-question-circle.png" alt=""> 'Us'</h2>
-                    <p class="subtitle">Who are behind this?</p>
+        <section class="about-section">
+            <div class="background">
+                <div class="section-heading">
+                    <h2 class="section-title">
+                        About
+                    </h2>
+                    <h2 class="section-title2"><i class="fa-solid fa-id-card"></i>
+                        'Us'
+                    </h2>
                 </div>
+                <div class="container">
+                    
 
-                <!--For placing body content side by side-->
-                <!--Might need to change to 'Container' to match hero section container to reduce code.-->
-                <div class="body-container">
-
-                    <div class="technician-card-left">
-                        <img src="assets/images/Numan-Passport.png" alt="Numan Usman-Website Owner">
-                        <p class="technician-name">
-                            Numan Usman
-                        </p>
-                        <p class="titles">
-                            Emergency Nurse <br>
-                            "Emergency Computer Physician" <br>
-                            Graphic Designer <br>
-                            UI/UX, Frontend Dev (In the making)
-                        </p>
-
+                    <div class="content-background">
+                        <div class="technician-card-left">
+                            <img class="technician" src="assets/images/Numan-Passport.png" alt="Numan Usman-Website Owner">
+                            <p class="technician-name">
+                                Numan Usman
+                            </p>
+                            <p class="titles">
+                                Emergency Nurse <br>
+                                "Emergency Computer Physician" <span class="green"><i class="fa-solid fa-face-smile-beam"></i></span> <br>
+                                Graphic Designer <br>
+                                UI/UX, Frontend Dev (In the making)
+                            </p>
+    
+                        </div>
+    
+                        <div class="technician-bio-right">
+                            <p>I'm hardly "the man", tho, but I'm the man behind this.</p>
+                            <p>A nurse by profession and a tech enthusiast by heart...</p>
+                            <p>...So I treat humans & computers. That's pretty cool, if you ask me, but don't. Kidding.<span class="green"><i class="fa-solid fa-face-smile-wink"></i></span></p>
+                            <p>I am a self-taught "computer whatever you wanna call it"</p>
+                            <p>I've always loved playing around with PCs since I got introduced to it as teenager in High School.</p>
+                            <p>I've been doing Freelance Computer Repairs over a decade now.</p>
+                            <p>Got Excellent Customer Service. I'm Trustworthy, Experienced.</p>
+                            <p>My best qualities of all, I've got a big forehead, a small body, and I wear cool glasses. <br>
+                                <span class="smileys">
+                                    <span class="red-smile"><i class="fa-solid fa-face-smile"></i></span>
+                                    <span class="green-smile"><i class="fa-solid fa-face-smile-beam"></i></span>
+                                    <span class="grey-smile"><i class="fa-solid fa-face-smile-wink"></i></span>
+                                </span>
+                            </p>
+                            
+                        </div>
+    
                     </div>
-
-                    <div class="technician-bio-right">
-                        <p>
-                            I'm hardly "the man", tho, but I'm the man behind this.
-                            A nurse by profession and a tech enthusiast by heart. 
-                            So I treat humans & computers. That's pretty cool, if you ask me, but don't. Kidding :)
-                            I am a self-taught "computer whatever you wanna call it"
-                            I’ve always loved playing around with PCs since I got introduced to it as teenager in High School, then SSS.
-                            Been doing Freelance computer repairs over a decade now.
-                            Got Excellent Customer Service. I'm Trustworthy, Experienced. 
-                            My best qualities of all, I've got a big forehead and a small body, and I wear cool glasses.
-                        </p>
-                    </div>
-
+                    
                 </div>
-                
+            </div>
+        </section>
 
-            </section>
 
-
-            <section class="testimonials">
-                <!--Header-container for background for contents-->
-                <div class="header-container">
-                    <h2 class="section-header">Testimonials</h2>
-                    <h2 class="section-header-2"><img src="assets/mobileTestimo-Icon-ionic-ios-chatboxes.png" alt=""> About 'Us'</h2>
-                    <p class="subtitle">What customers say...</p>
+        <section class="testimonial-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-title">
+                        Testimonials
+                    </h2>
+                    <h2 class="section-title2"><i class="fa-solid fa-comments"></i>
+                        About 'Us'
+                    </h2>
                 </div>
 
-                <!--For placing body content side by side-->
-                <!--Might need to change to 'Container' to match hero section container to reduce code.--> 
-                
                 <div class="card-container">
-                    <div class="card-content">
-                        <div class="card">
-                            <!--Get placeholder pics of actual human faces -->
-                            <img src="nuest-grinder-icon.png" alt="Person giving the testimony.">
-
-                            <blockquote class="testimony">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consequuntur consequatur, ratione laborum earum quam dicta sint ab ad eos corrupti et, expedita reprehenderit quaerat laudantium culpa a quasi!</blockquote> <cite>John Doe</cite>
-                        </div>
+                    
+                    <div class="grey-background">
+                        <p class="subtitle"> What our customers say...</p>
                     </div>
+
                     <div class="card-content">
+                        
                         <div class="card">
                             <!--Get placeholder pics of actual human faces -->
-                            <img src="nuest-grinder-icon.png" alt="Person giving the testimony.">
+                            <img src="/assets/images/lebron.jpg" alt="Person giving the testimony.">
 
                             <blockquote class="testimony">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consequuntur consequatur, ratione laborum earum quam dicta sint ab ad eos corrupti et, expedita reprehenderit quaerat laudantium culpa a quasi!</blockquote> <cite>John Doe</cite>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ducimus atque sequi. Sit, officia sunt.
+                            </blockquote> <cite>John Doe</cite>
                         </div>
-                    </div>
-                    <div class="card-content">
+                    
                         <div class="card">
                             <!--Get placeholder pics of actual human faces -->
-                            <img src="nuest-grinder-icon.png" alt="Person giving the testimony.">
+                            <img src="/assets/images/bugs.jpg" alt="Person giving the testimony.">
 
                             <blockquote class="testimony">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consequuntur consequatur, ratione laborum earum quam dicta sint ab ad eos corrupti et, expedita reprehenderit quaerat laudantium culpa a quasi!</blockquote> <cite>John Doe</cite>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ducimus atque sequi. Sit, officia sunt.
+                            </blockquote> <cite>John Doe</cite>
                         </div>
-                    </div>
-                    <div class="card-content">
+                        
                         <div class="card">
                             <!--Get placeholder pics of actual human faces -->
-                            <img src="nuest-grinder-icon.png" alt="Person giving the testimony.">
+                            <img src="/assets/images/lebron.jpg" alt="Person giving the testimony.">
 
                             <blockquote class="testimony">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consequuntur consequatur, ratione laborum earum quam dicta sint ab ad eos corrupti et, expedita reprehenderit quaerat laudantium culpa a quasi!</blockquote> <cite>John Doe</cite>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ducimus atque sequi. Sit, officia sunt.</blockquote> <cite>John Doe</cite>
                         </div>
-                    </div>
-                    <div class="card-content">
+                   
                         <div class="card">
                             <!--Get placeholder pics of actual human faces -->
-                            <img src="nuest-grinder-icon.png" alt="Person giving the testimony.">
+                            <img src="/assets/images/lebron.jpg" alt="Person giving the testimony.">
 
                             <blockquote class="testimony">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consequuntur consequatur, ratione laborum earum quam dicta sint ab ad eos corrupti et, expedita reprehenderit quaerat laudantium culpa a quasi!</blockquote> <cite>John Doe</cite>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ducimus atque sequi. Sit, officia sunt.</blockquote> <cite>John Doe</cite>
                         </div>
-                    </div>
-                    <div class="card-content">
+                        
                         <div class="card">
                             <!--Get placeholder pics of actual human faces -->
-                            <img src="nuest-grinder-icon.png" alt="Person giving the testimony.">
+                            <img src="/assets/images/bugs.jpg" alt="Person giving the testimony.">
 
                             <blockquote class="testimony">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consequuntur consequatur, ratione laborum earum quam dicta sint ab ad eos corrupti et, expedita reprehenderit quaerat laudantium culpa a quasi!</blockquote> <cite>John Doe</cite>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ducimus atque sequi. Sit, officia sunt.</blockquote> <cite>John Doe</cite>
                         </div>
-                    </div>
-                    <div class="card-content">
+                        
                         <div class="card">
                             <!--Get placeholder pics of actual human faces -->
-                            <img src="nuest-grinder-icon.png" alt="Person giving the testimony.">
+                            <img src="assets/images/lebron.jpg" alt="Person giving the testimony.">
 
                             <blockquote class="testimony">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quia consequuntur consequatur, ratione laborum earum quam dicta sint ab ad eos corrupti et, expedita reprehenderit quaerat laudantium culpa a quasi!</blockquote> <cite>John Doe</cite>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ducimus atque sequi. Sit, officia sunt.</blockquote> <cite>John Doe</cite>
+                        </div>
+                        
+                        <div class="card">
+                            <!--Get placeholder pics of actual human faces -->
+                            <img src="assets/images/bugs.jpg" alt="Person giving the testimony.">
+
+                            <blockquote class="testimony">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ducimus atque sequi. Sit, officia sunt.</blockquote> <cite>John Doe</cite>
                         </div>
                     </div>
 
                 </div>
+            </div>
+        </section>
 
-            </section>
 
 
-            <section class="contact">
-                <!--Header-container for background for contents-->
-                <div class="header-container">
-                    <h2 class="section-header">Contact</h2>
-                    <h2 class="section-header-2"><img src="assets/mobile-Icon-awesome-question-circle.png" alt=""> 'Us'</h2>
-                    <p class="subtitle">How can we help you?</p>
+        <section class="what-next-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-title">
+                        What's
+                    </h2>
+                    <h2 class="section-title2"><i class="fa-solid fa-square-up-right"></i><i class="fa-solid fa-fire"></i>
+                        Cooking?!
+                    </h2>
                 </div>
 
-                <!--For placing body content side by side-->
-                <!--Might need to change to 'Container' to match hero section container to reduce code.-->
+                <p class="subtitle">Coming Soon!!</p>
+                
+                <ul class="cooking">
+                    <li>Web Development Services via <a href="#">WebMason</a>.</li>
+                    <li>Private Coding Tutoring for JHS/SHS Students</li>
+                    <li class="watch-here">Watch this space for more....</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="section-title">
+                        Contact
+                    </h2>
+                    <h2 class="section-title2"><img src="assets/phone-sms-whatsapp.svg" alt="" width="20%">
+                        'Us'
+                    </h2>
+                </div>
+
                 <div class="body-container">
 
                     <div class="contact-card-left">
                         <form action="submit">
-                            <label for="name" >Name</label>
-                            <input type="text" placeholder="Full Name (Required)" >
+                            <label for="name">Name <span>*</span></label>
+                            <input type="text" id="name" placeholder="Full Name (Required)" required >
 
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Optional">
+                            <label for="email">Email <span>*</span></label>
+                            <input type="email" name="email" id="email" placeholder="Optional" required>
 
-                            <label for="phone-number">Phone Number</label>
-                            <input type="tel" name="number" id="number" placeholder="Phone number (Required)">
+                            <label for="number">Phone Number <span>*</span></label>
+                            <input type="tel" name="number" id="number" placeholder="Phone number (Required)" required>
+
+                            <!-- <label for="preference">What's your Preference?</label>
+                            <input type="checkbox" name="preference" id="preference">
+                            <input type="checkbox" name="preference" id="preference">
+                            <input type="checkbox" name="preference" id="preference"> -->
 
                             <label for="device">Device (Add model if possible)</label>
                             <input list="devices" name="device" id="device" placeholder="Choose your device">
+
                             <datalist id="devices">
                                 <option value="Dell"></option>
                                 <option value="HP"></option>
@@ -348,63 +425,73 @@
                                 <option value="Sony"></option>
                                 <option value="Samsung"></option>
                                 <option value="Asus"></option>
+                                <option value="Other..."></option>
                             </datalist>
 
-                            <button type="submit">Send Message</button>
+                            <label for="message">Message <span>*</span></label>
+                            <textarea name="message" id="message" cols="3" rows="5" placeholder="Please briefly describe your issue. Or state the service you need." spellcheck="true" required></textarea>
                             
+                            <button class="primary-cta" type="submit">Send Message</button>
                             
                         </form>
 
                     </div>
 
                     <div class="contact-section-illustration">
-                        <img src="assets/mobileContact-section-illustration.png" alt="Person sending info from a tablet, and another receiving on a laptop.">
+                        <img src="/assets/people-connecting-illust.svg" alt="Person sending info from a tablet, and another receiving on a laptop.">
                     </div>
 
                 </div>
-                
-
-            </section>
-
-        </main>
-
-        <footer>
-            <div class="container">
-                <p class="address">Address</p>
-                <address>
-                    MVSS 27, Moinsi Valley
-                    Obuasi, Ghana
-                    Ivory Street, AO-0978-34769
-
-                </address>
-
-                <div class="phone">
-                    <h4>Phone</h4>
-                    <p>
-                    (+233) 206484034 <br> (+233) 546979534
-                    </p>
-
-                </div>
-
-                <div class="email">
-                    <h4>Email</h4>
-                    <p>nuestman@icloud.com </p>
-                </div>
-
-                <div class="footer-social">
-                    <h4>Social</h4>
-                    <img src="assets/mobileSocial-icons.png" alt="">
-                </div>
-                
             </div>
-
-        </footer>
-
+        </section>
 
 
-    </div>
-    <script src="js/scripts.js"></script>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <ul class="fa-ul" id="footer-nav" >
+                    <li class="address">
+                        <h4 ><span class="fa-solid fa-id-card"></span> Address</h4>
+                        <address>Ivory Street, AO-010-0767 <br>
+                            MVSS 27, Moinsi Valley <br>Obuasi, Ghana.
+                        </address>
+                    </li>
+
+                    <li class="phone">
+                        <h4><span class="fa-solid fa-id-card"></span> Phone</h4>
+                        <p>
+                        (+233) 206484034 <br> (+233) 546979534
+                        </p>
+    
+                    </li>
+    
+                    <li class="email">
+                        <h4><span class="fa-solid fa-paper-plane"></span> Email</h4>
+                        <p>nuestman@icloud.com </p>
+                    </li>
+    
+                    <li class="footer-social">
+                        <h4><span class="fa-solid fa-users"></span> Social</h4>
+                        <img src="/assets/mobileSocial-icons.png" alt="">
+                    </li>
+                    
+                </ul>
+            </div>
+                
+            <h5 class="credits">&copy; Nuestman Tech Labs, 2022</h5>
+        </section>
+    </footer>
+    
+    <button>
+        <a href="#back-to-top">
+            <i class="fa-solid fa-angles-up"><br>  Top</i>
+        </a>
+    </button>
+    
+    <script src="js/scripts.js">
+    </script>
 
 </body>
-
 </html>
