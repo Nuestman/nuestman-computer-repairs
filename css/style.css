@@ -46,7 +46,7 @@ body {
   color: var(--newprimary);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background: #f3f3f3;
+  background: #f3f3f36c;
 }
 body section {
   background: #9db4c5;
@@ -105,11 +105,11 @@ h6 {
 header {
   background: var(--newprimary);
   color: var(--newsecondary);
+  padding: 0.5em 2em;
 }
 header .container {
   display: flex;
   justify-content: space-between;
-  padding: 0.8em 1em;
 }
 header .logo {
   width: 120px;
@@ -181,11 +181,8 @@ header nav.menuBtn {
 }
 
 /*Hero Style*/
-main {
-  background-image: url("../assets/Background_Rectangles.png");
-}
-
 .hero-section {
+  margin-top: 8em;
   background: unset;
   text-align: center;
   color: var(--newprimary);
@@ -229,6 +226,7 @@ main {
   margin: 2em auto;
 }
 
+/*Services Styling*/
 .services-section {
   text-align: center;
   margin-top: 2em;
@@ -313,7 +311,7 @@ main {
 .technician-card-left,
 .technician-bio-right,
 .card,
-.contact-card-left {
+.contact-card-left, .what-next-section.ul {
   box-shadow: 0 1px 3px var(--newsecondary);
 }
 
@@ -360,7 +358,7 @@ main {
 }
 .about-section .technician-card-left .titles {
   font-weight: lighter;
-  font-size: 8pt;
+  font-size: 10pt;
   margin: 0 3.5em;
   text-align: center;
 }
@@ -452,6 +450,15 @@ main {
   color: var(--newsecondary);
   font-weight: bold;
 }
+.what-next-section ul {
+  margin: 0 1.5em;
+  border: 7px solid var(--newtertiary);
+  box-shadow: 0 1px 3px var(--newsecondary);
+  background: white;
+  border-radius: 0.8em;
+  padding: 1em;
+  color: var(--newsecondary);
+}
 .what-next-section li {
   line-height: 2.5em;
   list-style-type: disc;
@@ -489,6 +496,10 @@ main {
 .contact-section .contact-card-left span {
   color: var(--accents);
 }
+.contact-section .contact-card-left span.add-info {
+  font-size: 9pt;
+  color: var(--newprimary);
+}
 .contact-section .contact-card-left input, .contact-section .contact-card-left textarea {
   font-size: 8pt;
   overflow-wrap: break-word;
@@ -519,6 +530,9 @@ section.footer {
   background: var(--newprimary);
   color: white;
 }
+section.footer a {
+  color: white;
+}
 section.footer .container {
   all: unset;
 }
@@ -530,55 +544,256 @@ section.footer .container ul {
 section.footer .container ul li {
   padding: 1em;
   border-top: 1px solid white;
+  border-left: 1px solid white;
 }
 section.footer .container ul li span {
   margin-right: 0.5em;
+}
+section.footer .container ul li address {
+  font-size: 10pt;
 }
 section.footer .container ul li p {
   font-size: 10pt;
   font-style: italic;
 }
+section.footer .container ul .footer-social > a {
+  text-align: left;
+  padding-right: 1em;
+}
 section.footer .credits {
-  padding: 1em 0;
+  padding: 0.5em 0;
   text-align: center;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: normal;
   border-top: 1px solid white;
+}
+
+#top {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  position: fixed;
+  left: 1em;
+  top: 32em;
+}
+#top i {
+  color: var(--newsecondary);
+}
+#top button {
+  cursor: pointer;
+  border: var(--newsecondary) solid 2px;
+  border-radius: 5px;
+  background: transparent;
+  padding: 0.3em;
+}
+#top button:hover {
+  padding: 0.5em 1em;
+  transition: 0.5s;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header, header.container, nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+footer {
+  z-index: 9999;
 }
 
 /*Media Queries Start*/
 @media screen and (min-width: 768px) {
+  #top {
+    display: block;
+  }
+
   /*Header-Navbar Styling*/
+  header {
+    box-shadow: 1px 2px 6px var(--newtertiary);
+    padding: 0.5em 2em;
+  }
+  header nav li a {
+    color: white;
+  }
   header .mobile-menu, header .mobile-menu-exit {
     display: none;
   }
   header .container {
     display: grid;
     grid-template-columns: 300px auto;
-    padding: 1em;
+    align-items: center;
+    margin: 0 2em;
   }
   header .logo {
-    width: 200px;
+    width: 180px;
+    align-items: baseline;
   }
-  header nav, header .nav-background, header ul, header li {
-    all: unset;
-  }
-  header nav .nav-background {
-    background: yellow;
+  header nav {
     display: flex;
+    justify-content: space-between;
+    position: unset;
+    background: none;
+    text-align: left;
+    padding-top: 0;
+    height: unset;
+    width: unset;
   }
-  header nav .nav-background .about > i, header nav .nav-background .faq > i, header nav .nav-background :before, header nav .nav-background .coming-soon > i, header nav .nav-background .nav-contact-cta > i {
+  header nav li {
+    border-bottom: none;
+  }
+  header nav ul > li {
+    display: inline;
+    padding: 2.28em 1.5em;
+  }
+  header nav ul > li:hover {
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.041);
+    transition: 0.5s ease-in-out;
+  }
+  header nav ul.primary-nav {
+    margin-top: 0;
+    margin-right: 10em;
+  }
+  header nav ul.secondary-nav .nav-contact-cta {
+    border: 2px solid var(--accents);
+    padding: 0.8em 2em;
+    border-radius: 0.8em;
+    background: white;
+    font-weight: bold;
+  }
+  header nav ul.secondary-nav .nav-contact-cta a {
+    color: var(--accents);
+  }
+  header nav ul.secondary-nav .nav-contact-cta:hover {
+    background: var(--accents);
+    transition: 0.3s ease-in-out;
+  }
+  header nav ul.secondary-nav .nav-contact-cta:hover a {
+    color: white;
+  }
+  header .about > i, header .faq > i, header :before, header .coming-soon > i, header .nav-contact-cta > i {
     display: none;
   }
-  header nav .nav-background .primary-nav {
+
+  /*Hero min 768px*/
+  .hero-section {
+    margin-top: 13em;
+  }
+  .hero-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin: 7em 5em;
+    text-align: left;
+  }
+  .hero-section h1 {
+    font-size: 2.9rem;
+  }
+  .hero-section h2 {
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+    color: var(--newsecondary);
+    font-weight: normal;
+  }
+  .hero-section .hero-cta {
+    margin-top: 5em;
+    display: flex;
+  }
+  .hero-section .primary-cta {
     margin: unset;
+    font-size: 1.2rem;
+    padding: 0.2em 4.7em;
+    cursor: pointer;
+  }
+  .hero-section .secondary-cta {
+    font-size: 1rem;
+  }
+  .hero-section .secondary-cta img {
+    width: 30%;
+    margin-left: 1.8em;
+  }
+  .hero-section .right-hero {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  /*Services Styling*/
+  .section-heading .section-title, .section-heading .section-title2 {
+    font-size: 300%;
+  }
+  .section-heading .subtitle {
+    padding: unset;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    margin: 1.5em 15em;
+  }
+
+  .service-list {
+    margin: 2em 10em;
+    line-height: 3em;
+  }
+  .service-list .fa-ul {
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 2em;
+         column-gap: 2em;
+    font-size: 1.5rem;
+  }
+  .service-list li {
+    padding-right: 0;
+  }
+
+  /*FAQ Section styling*/
+  .faq-section .section-title2 {
+    padding-left: 11.8em;
+    margin-top: -0.6em;
+  }
+  .faq-section .faq-ask {
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+    margin: 0 10em 3em 10em;
+    font-size: 1rem;
+  }
+  .faq-section .faq-ask li {
+    padding-right: 0;
+  }
+  .faq-section .fa-ul {
+    display: unset;
   }
 
   /*About Us Styling*/
+  .about-section .section-title2 {
+    padding-left: 12.1em;
+  }
+  .about-section .content-background {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 6.5em;
+  }
+  .about-section .technician-card-left {
+    width: 50%;
+    margin-top: 2em;
+  }
+  .about-section .technician-card-left .technician {
+    margin-top: unset;
+  }
+  .about-section .technician-card-left .technician-name {
+    font-size: 1.5rem;
+  }
+  .about-section .technician-card-left .titles {
+    font-size: 1rem;
+    font-weight: normal;
+  }
   .about-section .technician-bio-right {
-    display: grid;
-    gap: 0.5em;
-    grid-template-columns: repeat(8, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
   }
   .about-section .technician-bio-right p {
     border: 5px solid var(--newtertiary);
@@ -592,6 +807,110 @@ section.footer .credits {
   }
   .about-section .technician-bio-right :last-child .green-smile {
     color: var(--newsecondary);
+  }
+
+  /*Testimonial styling*/
+  .testimonial-section .section-title2 {
+    padding-left: 10.2em;
+    margin-top: -0.5em;
+  }
+  .testimonial-section .grey-background {
+    height: 20em;
+  }
+  .testimonial-section .grey-background .subtitle {
+    margin-top: unset;
+  }
+  .testimonial-section .card-content {
+    overflow-x: scroll;
+    margin: -10em 7em 0 5.8em;
+  }
+  .testimonial-section .card-content .card cite {
+    font-weight: bold;
+  }
+
+  /*What's Next Styling*/
+  .what-next-section .section-title2 {
+    padding-left: 8.1em;
+    margin-top: -0.4em;
+  }
+  .what-next-section .section-title2 i {
+    padding-right: 0.1em;
+  }
+
+  .what-next-section ul {
+    margin: 0 8em;
+    font-size: 1.5rem;
+  }
+  .what-next-section ul a {
+    color: var(--newsecondary);
+    border-radius: 0.2em;
+    border: var(--newsecondary) 2px solid;
+    padding: 0.2em;
+  }
+  .what-next-section ul a:hover {
+    background: var(--newprimary);
+    border-radius: 0.2em;
+    padding: 0.2em;
+  }
+
+  /*Contact styling*/
+  .contact-section {
+    background: unset;
+  }
+  .contact-section .section-title2 {
+    display: flex;
+    padding-left: 12.5em;
+    margin-top: -0.4em;
+  }
+  .contact-section .section-title2 i {
+    padding-right: 0.1em;
+  }
+  .contact-section .section-title2 img {
+    width: 10%;
+  }
+  .contact-section .body-container {
+    display: flex;
+    margin: 2em 6.5em;
+  }
+  .contact-section .contact-card-left {
+    z-index: unset;
+    font-size: 1rem;
+    margin-top: 2em;
+    width: 40%;
+  }
+  .contact-section .contact-card-left form {
+    padding-top: 1em;
+  }
+  .contact-section .contact-card-left input, .contact-section .contact-card-left label, .contact-section .contact-card-left textarea {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .contact-section .contact-card-left span {
+    color: var(--accents);
+  }
+  .contact-section .contact-card-left input, .contact-section .contact-card-left textarea {
+    font-size: 8pt;
+    overflow-wrap: break-word;
+    border: var(--newsecondary) 1px solid;
+    margin-bottom: 1em;
+    padding: 0 1em;
+    border-radius: 4px;
+  }
+  .contact-section .contact-card-left .primary-cta {
+    margin-top: 1em;
+    background: var(--accents);
+    padding: 1em 3em;
+    color: white;
+    font-weight: bold;
+    border-radius: 1em;
+    width: 90%;
+    margin-left: 1em;
+  }
+  .contact-section .contact-section-illustration {
+    position: static;
+    opacity: 1;
+    width: 70%;
   }
 
   section.footer .container ul li {

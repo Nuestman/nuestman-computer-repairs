@@ -22,7 +22,7 @@
 
 <body>
 
-    
+    <span id="topper"></span>
     <header id="back-to-top">
         <div class="container">
             
@@ -32,7 +32,7 @@
             <img class="mobile-menu" id="mobile-cta" src="assets/images/mobile-menu.svg" alt="Open Navigation">
 
             <nav>
-                <div class="nav-background">
+                <!-- <div class="nav-background"> -->
 
                     <img class="mobile-menu-exit" id="mobile-exit" src="assets/images/mobile-menu-exit.svg" alt="Close Navigation">
                 
@@ -42,7 +42,7 @@
 
                         <li class="faq"><i class="fa-solid fa-circle-question fa-3x"></i><a href="#faq-section">FAQ</a></li>
 
-                        <li class="coming-soon"><i class="fa-solid fa-fire fa-3x"></i><a href="#coming-soon-section">Coming Soon!</a></li>
+                        <li class="coming-soon"><i class="fa-solid fa-fire fa-3x"></i><a href="#what-next-section">Coming Soon!</a></li>
                     </ul>
     
                     <ul class="secondary-nav">
@@ -52,7 +52,7 @@
                         <li class="nav-contact-cta"><i class="fa-solid fa-mobile-button fa-3x"></i><a href="#contact-section">Contact 'Us'</a></li>
                     </ul>
                     
-                </div>
+                <!-- </div> -->
     
                     
             </nav>
@@ -68,15 +68,15 @@
                 
                 <div class="left-hero">
                     <h1>
-                        What's Your Computer Emergency?
+                        What's Your <br>Computer Emergency?
                     </h1>
     
-                    <h3>We've got you covered</h3>
+                    <h2>We've got you covered!</h2>
     
                     <div class="hero-cta">
-                        <button class="primary-cta" type="submit">Call Now!</button>
+                        <button class="primary-cta" type="button" href="#footer-social">Call Now!</button>
     
-                        <a href="services-section" class="secondary-cta">
+                        <a href="#services-section" class="secondary-cta">
                         <img src="assets/mobile-Reader-icon-mobile.png" alt="Little Reader icon">Read more...</a>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
         </section>
 
 
-        <section class="services-section">
+        <section class="services-section" id="services-section">
            
             <div class="background">
                 <div class="container">
@@ -143,7 +143,7 @@
         </section>
 
 
-        <section class="faq-section">
+        <section class="faq-section" id="faq-section">
             <div class="container">
                 <div class="section-heading">
                     <h2 class="section-title">
@@ -223,7 +223,7 @@
         </section>
 
 
-        <section class="about-section">
+        <section class="about-section" id="about-section">
             <div class="background">
                 <div class="section-heading">
                     <h2 class="section-title">
@@ -252,8 +252,8 @@
                         </div>
     
                         <div class="technician-bio-right">
-                            <p>I'm hardly "the man", tho, but I'm the man behind this.</p>
-                            <p>A nurse by profession and a tech enthusiast by heart...</p>
+                            <p>I'm hardly "the man", tho, but for this, I'm your man.</p>
+                            <p>A nurse by profession and a tech enthusiast...</p>
                             <p>...So I treat humans & computers. That's pretty cool, if you ask me, but don't. Kidding.<span class="green"><i class="fa-solid fa-face-smile-wink"></i></span></p>
                             <p>I am a self-taught "computer whatever you wanna call it"</p>
                             <p>I've always loved playing around with PCs since I got introduced to it as teenager in High School.</p>
@@ -276,7 +276,7 @@
         </section>
 
 
-        <section class="testimonial-section">
+        <section class="testimonial-section" id="testimonial-section">
             <div class="container">
                 <div class="section-heading">
                     <h2 class="section-title">
@@ -360,7 +360,7 @@
 
 
 
-        <section class="what-next-section">
+        <section class="what-next-section" id="what-next-section">
             <div class="container">
                 <div class="section-heading">
                     <h2 class="section-title">
@@ -374,7 +374,7 @@
                 <p class="subtitle">Coming Soon!!</p>
                 
                 <ul class="cooking">
-                    <li>Web Development Services via <a href="#">WebMason</a>.</li>
+                    <li>Web Development Services via <a href="#">WebMason.</a></li>
                     <li>Private Coding Tutoring for JHS/SHS Students</li>
                     <li class="watch-here">Watch this space for more....</li>
                 </ul>
@@ -382,7 +382,7 @@
         </section>
 
 
-        <section class="contact-section">
+        <section class="contact-section" id="contact-section">
             <div class="container">
                 <div class="section-heading">
                     <h2 class="section-title">
@@ -411,7 +411,7 @@
                             <input type="checkbox" name="preference" id="preference">
                             <input type="checkbox" name="preference" id="preference"> -->
 
-                            <label for="device">Device (Add model if possible)</label>
+                            <label for="device">Device <span class="add-info">(Add model in message, if possible.)</span></label>
                             <input list="devices" name="device" id="device" placeholder="Choose your device">
 
                             <datalist id="devices">
@@ -472,9 +472,23 @@
                         <p>nuestman@icloud.com </p>
                     </li>
     
-                    <li class="footer-social">
+                    <li class="footer-social" id="footer-social">
                         <h4><span class="fa-solid fa-users"></span> Social</h4>
-                        <img src="/assets/mobileSocial-icons.png" alt="">
+                        
+                        <a href="https://github.com/nuestman"><i class="fa-brands fa-github fa-2x" aria-label="Github"></i></a>
+                        <a href="api.whatsapp.com"><i class="fa-brands fa-whatsapp fa-2x" aria-label="WhatsApp"></i></a>
+                        <a href="api.linkedin.com/numan-usman"><i class="fa-brands fa-linkedin fa-2x" aria-label="LinkedIn"></i></a>
+                        <a href="api.dev.to"><i class="fa-brands fa-dev fa-2x" aria-label="Dev.to"></i></a>
+                        <a href="api.instagram.com/nuestman"><i class="fa-brands fa-instagram fa-2x" aria-label="Instagram"></i></a>
+                        <a href="api.facebook.com/nusman"><i class="fa-brands fa-facebook fa-2x" aria-label="Facebook"></i></a>
+                        <a href="api.twitter.com"><i class="fa-brands fa-twitter fa-2x" aria-label="Twitter"></i></a>
+                        
+                        
+                        
+                        
+                        
+                        
+                            
                     </li>
                     
                 </ul>
@@ -484,11 +498,12 @@
         </section>
     </footer>
     
-    <button>
-        <a href="#back-to-top">
-            <i class="fa-solid fa-angles-up"><br>  Top</i>
-        </a>
-    </button>
+
+    <a href="#topper" id="top">
+        <button type="reset">
+        <i class="fa-solid fa-angles-up"><br>Top</i>
+        </button>
+    </a>
     
     <script src="js/scripts.js">
     </script>
